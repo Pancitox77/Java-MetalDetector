@@ -1,25 +1,24 @@
-# Getting Started
+# Inicio
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+MetalDetector es una aplicación enfocada a los "detectoristas", quienes usan detectores de metales.
+La aplicación en sí es un registro, donde se guardan datos del objeto, como el tipo, material, fecha, hora, etc.
 
-## Folder Structure
+## Estructura de las Carpetas
 
-The workspace contains two folders by default, where:
+El espacio contiene las siguientes carpetas:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+- `src`: La carpeta principal, donde se guardan las librerías propias, la app principal, y otras subcarpetas.
+- `lib`: La carpeta que contiene las dependencias.
+- `javafx-sdk-19`: La carpeta con el código de la librería JavaFX, esencial para el funcionamiento de los componentes.
+- `bin`: La carpeta donde se guardan los archivos binarios y compilados (la salida de la compilación)
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Dependencias
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+La aplicación usa el código extraído de la carpeta `javafx-sdk-19`, que viene en la app. No es necesario instalar nada más.
 
-## Dependency Management
+## Ejecutar JAR
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
-
-## Execute JAR
-
-In a terminal, run:
+En una terminal, ejecutar:
 
 '''sh
 java --module-path javafx-sdk-19/lib --add-modules javafx.controls,javafx.fxml -jar MetalDetector.jar
